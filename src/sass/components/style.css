@@ -1,0 +1,33 @@
+.glassmorph {
+   height: 4.5em;
+   background: rgba(255, 255, 255, 0.44);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.big-glassmorph {
+   padding: 3em;
+   background: rgba(255, 255, 255, 0.44);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.big-glassmorph:hover,
+.glassmorph:hover {
+   transition: all 500ms ease; 
+   transform: scale(1.05);
+}
+
+.equal-height-columns {
+   display:-webkit-box;
+   display:-webkit-flex;
+   display:-ms-flexbox;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.equal-column-content {
+   height: 100%;
+}
