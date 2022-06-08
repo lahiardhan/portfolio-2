@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
 #projects {
+  font-family: 'Montserrat';
   background-color: $white-color;
   color: $dark-blue-text;
   margin-top: -10rem;
@@ -35,6 +38,7 @@
       }
 
       &-title {
+        font-family: 'Montserrat';
         font-weight: bold;
         margin-bottom: 1.8rem;
       }
