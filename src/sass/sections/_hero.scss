@@ -30,22 +30,67 @@
 
   .hero-title {
     font-weight: 700;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
     text-align: left;
     @include respond(tab-port) {
-      font-size: 3.6rem;
-      text-align: center;
+      font-size: 2.5rem;
     }
     @include respond(phone) {
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
       line-height: 1.5;
     }
   }
 
-  .hero-cta {
+  .rotatingText {
+    height: 3.5rem;
     display: flex;
-
     @include respond(tab-port) {
-      justify-content: center;
+      height: 2.75rem;
+    }
+    @include respond(phone) {
+      height: 1.4rem;
     }
   }
+
+  span.words {
+    overflow: hidden;
+  }
+  
+  span.rotatingText-adjective {
+    display: block;
+    font-weight: 700;
+    animation: rotate infinite 6s;
+  }
+  @keyframes rotate {
+    10%{
+          transform: translateY(-112%);
+      }
+      25%{
+          transform: translateY(-100%);
+      }
+      35%{
+          transform: translateY(-212%);
+      }
+      50%{
+          transform: translateY(-200%);
+      }
+      60%{
+          transform: translateY(-312%);
+      }
+      75%{
+          transform: translateY(-300%);
+      }
+      85%{
+          transform: translateY(-412%);
+      }
+      100%{
+          transform: translateY(-400%);
+      }
+  }
+ 
+  .hero-cta {
+    display: flex;
+  }
+  
 }
