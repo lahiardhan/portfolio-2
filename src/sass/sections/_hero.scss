@@ -43,13 +43,13 @@
   }
 
   .rotatingText {
-    height: 3.5rem;
+    height: 3.9rem;
     display: flex;
     @include respond(tab-port) {
-      height: 2.75rem;
+      height: 2.85rem;
     }
     @include respond(phone) {
-      height: 1.4rem;
+      height: 1.55rem;
     }
   }
 
